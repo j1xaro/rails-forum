@@ -22,4 +22,8 @@ test:
 
 production:
   <<: *default
-  database: forum
+  database: d3o5jrkl6t9n5r
+  username: dxvmbywmbmowgq
+  password: 87c61819cc002b2b6fd66f740a656335ae113d3af43771be1f5ce408d2e6ba1f
+  port: 5432
+  url: postgres://dxvmbywmbmowgq:87c61819cc002b2b6fd66f740a656335ae113d3af43771be1f5ce408d2e6ba1f@ec2-54-228-251-117.eu-west-1.compute.amazonaws.com:5432/d3o5jrkl6t9n5r
