@@ -20,6 +20,7 @@
         <td><%= post.user.username %></td>
         <td><%= time_ago_in_words(post.created_at) %> ago</td>
         <%= show_post_buttons(post) %>
+       
       </tr>
     <% end %>
   </tbody>

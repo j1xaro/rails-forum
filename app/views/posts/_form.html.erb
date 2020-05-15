@@ -1,3 +1,4 @@
+<script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
 <%= form_with(model: post, local: true) do |form| %>
   <% if post.errors.any? %>
     <div id="error_explanation">
@@ -18,8 +19,9 @@
 
   <div class="field">
     <%= form.label :body %>
-    <%= form.text_area :body %>
+    <%= form.cktext_area :body %>
   </div>
+  
 
   <div class="actions">
     <%= form.submit %>
