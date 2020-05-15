@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-
+<div class="container">
 <h1>Posts</h1>
 
 <table>
@@ -7,6 +7,7 @@
     <tr>
       <th>Title</th>
       <th>User</th>
+      <th>Created:</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -17,6 +18,7 @@
         
         <td><%= link_to post.title, post %></td>
         <td><%= post.user.username %></td>
+        <td><%= time_ago_in_words(post.created_at) %> ago</td>
         <%= show_post_buttons(post) %>
       </tr>
     <% end %>
@@ -26,3 +28,4 @@
 <br>
 
 <%= link_to 'New Post', new_post_path %>
+</div>

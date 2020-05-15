@@ -4,12 +4,13 @@ before_action :authenticate_user!, except: [:show, :index]
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all
+    @posts = Post.all.order("created_at DESC")
   end
 
   # GET /posts/1
   # GET /posts/1.json
   def show
+  @post = Post.find(params[:id])   
   end
 
   # GET /posts/new

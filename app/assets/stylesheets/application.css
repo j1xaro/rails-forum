@@ -13,3 +13,19 @@
  *= require_tree .
  *= require_self
  */
+tr
+{
+
+  text-align: center;
+  border-bottom: 1pt solid rgb(191, 185, 188);
+  border-top: 1pt solid rgb(191, 185, 188);
+  text-decoration: none!important;
+}
+th{
+  background-color: white!important;
+  text-align: center!important;
+}
+
+td{
+  vertical-align: baseline!important;
+}
